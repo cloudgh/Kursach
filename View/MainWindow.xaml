@@ -1,0 +1,13 @@
+﻿<Window x:Class="Kursach.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:Microsoft.Toolkit.Wpf.UI.Controls;assembly=Microsoft.Toolkit.Wpf.UI.Controls"
+        xmlns:local="clr-namespace:Kursach"
+        Title="MapControl Example" Height="450" Width="800">
+    <Grid>
+        <controls:MapControl x:Name="mapControl" DockPanel.Dock="Top" ZoomInteractionMode="GestureAndControl"
+            TiltInteractionMode="GestureAndControl" MapServiceToken="YourAuthenticationKeyHere"
+            Loaded="MapControl_Loaded"/>
+
+    </Grid>
+</Window>
